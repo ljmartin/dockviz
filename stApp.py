@@ -45,7 +45,7 @@ def main():
     
     selected_rank = st.text_input("Input Rank (i.e. `4`, ranks are zero-indexed)", "")
     if len(selected_rank)>=1:
-            pdb = Chem.MolFromPDBFile(selected_rank+'.pdb')
+            pdb = Chem.MolFromPDBFile('./files/'+selected_rank+'.pdb')
             molwt = Descriptors.MolWt(pdb)
             clogp = Crippen.MolLogP(pdb)
             formalcharge = sum([i.GetFormalCharge() for i in pdb.GetAtoms()])
@@ -61,12 +61,11 @@ def main():
     
     
     #molecules:
-    viewer.addModel(open('./5WIU-CAC.pdb', 'r').read(), 'pdb')
+    viewer.addModel(open('./files/5WIU-CAC.pdb', 'r').read(), 'pdb')
     viewer.zoomTo()
-#    viewer.zoomTo({'resn':"MRV"})
-    viewer.addModel(open('./5WIU-receptor.pdb', 'r').read(), 'pdb')
+    viewer.addModel(open('./files/5WIU-receptor.pdb', 'r').read(), 'pdb')
     if len(selected_rank) >= 1:
-        viewer.addModel(open(selected_rank+'.pdb', 'r').read(), 'pdb')
+        viewer.addModel(open('./files/'+selected_rank+'.pdb', 'r').read(), 'pdb')
         
         
         ri = pdb.GetRingInfo()
@@ -143,7 +142,7 @@ def main():
     st.write("Docking used `smina`: https://sourceforge.net/projects/smina/")
     st.write("Docking pipeline was described by `Esben Jannik Bjerrum` at https://www.cheminformania.com/ligand-docking-with-smina/")
     st.write("Ligands are from a publicly available dataset from `Lyu et al`: https://doi.org/10.1038/s41586-019-0917-9")
-    
+    st.write("and these pieces were put together by lewis martin: https://ljmartin.github.io/")
     
 if __name__=="__main__":
     main()
