@@ -48,7 +48,8 @@ def main():
             clogp = Crippen.MolLogP(pdb)
             formalcharge = sum([i.GetFormalCharge() for i in pdb.GetAtoms()])
             st.write(f"**Rank**: {selected_rank}, **MW**: {molwt}, **cLogP**: {clogp}, **Formal Charge**: {formalcharge}")
-            st.image(Draw.MolToImage(Chem.MolFromSmiles(Chem.MolToSmiles(pdb))))
+            Draw.MolToFile(Chem.MolFromSmiles(Chem.MolToSmiles(pdb)), 'mol.png')
+            st.image('mol.png')
 
         
     ###now the app:
