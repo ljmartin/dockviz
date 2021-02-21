@@ -1,5 +1,4 @@
 import streamlit as st
-import SessionState
 
 import pandas as pd
 import numpy as np
@@ -16,7 +15,6 @@ st.set_page_config(
     )
 
 ##Setup:
-#sesh = SessionState.get(labels=False))
 
 def isRingAromatic(mol, atomRing):
         for id in atomRing:
