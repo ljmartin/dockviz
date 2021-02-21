@@ -1,12 +1,13 @@
 # Docking curation with streamlit and py3dmol
 
 see [the app](https://share.streamlit.io/ljmartin/dockviz/main/stApp.py)
+
 see [intro post](https://ljmartin.github.io/sideprojects/dockviz.html) for motivation.
 
-## blurb:
+## blurb
 This is a streamlit app to visualize docking hits for the purposes of manual curation before moving to _in vitro_ testing. You might use this to prioritize a ranked list of docking hits so that you only spend money on buying the ligands with the best chance of successfully binding the target.
 
-In this test case, the 5 example ligands have been docked against the D4 receptor, crystal structure 5WIU bound to nemonapride. The ligands were pulled from a public dataset in [doi](https://doi.org/10.1038/s41586-019-0917-9)). Smina was used for docking, and obabel for file conversion to/from pdbqt/pdb.
+In this test case, the 5 example ligands have been docked against the D4 receptor, crystal structure 5WIU bound to nemonapride. The ligands were pulled from a public dataset in [doi](https://doi.org/10.1038/s41586-019-0917-9)). Smina was used for docking, and obabel for file conversion to/from pdbqt/pdb. The docking can be done within `run_smina.ipynb` assuming you have smina installed.
 
 ## how to use
 Load the app, and select whether or not to use Annotations that describe the pharmacophores (these can be helpful but sometimes messy). Write a number, from 0 - 4 inclusive, and press enter to load one of the docked ligand poses. How you judge the likelihood of a hit is up to you ;)
