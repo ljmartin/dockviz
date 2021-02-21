@@ -1,4 +1,1 @@
-streamlit==0.75.0
 rdkit
-numpy
-py3dmol
