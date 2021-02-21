@@ -141,6 +141,7 @@ def main():
     st.write("Docking used `smina`: https://sourceforge.net/projects/smina/")
     st.write("Docking pipeline was described by `Esben Jannik Bjerrum` at https://www.cheminformania.com/ligand-docking-with-smina/")
     st.write("Ligands are from a publicly available dataset from `Lyu et al`: https://doi.org/10.1038/s41586-019-0917-9")
+    st.write("structure file conversions by obabel: https://openbabel.org/docs/dev/Command-line_tools/babel.html")
     st.write("and these pieces were put together by lewis martin: https://ljmartin.github.io/")
     
 if __name__=="__main__":
