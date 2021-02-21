@@ -1,2 +1,3 @@
 libgcc=5.2.0
 rdkit
+py3dmol
