@@ -1,0 +1,53 @@
+REMARK  Name = 5WIU-CAC.pdb
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CAO_13  and  CAT_15
+REMARK    2  A    between atoms: CAO_13  and  NBA_26
+REMARK    3  A    between atoms: CAS_14  and  CAX_19
+REMARK    4  A    between atoms: CAV_17  and  NAP_22
+REMARK    5  A    between atoms: CAW_18  and  OAR_25
+REMARK    6  A    between atoms: CAZ_21  and  NAQ_23
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CAS AQD A1201     -15.526  15.904 -15.744  0.00  0.00    +0.000 C 
+ATOM      2  NAQ AQD A1201     -16.638  15.809 -16.648  0.00  0.00    +0.000 NA
+ATOM      3  OAD AQD A1201     -14.929  16.950 -15.642  0.00  0.00    +0.000 OA
+ENDROOT
+BRANCH   1   9
+ATOM      4  CAK AQD A1201     -15.231  12.434 -14.098  0.00  0.00    +0.000 A 
+ATOM      5  CAL AQD A1201     -14.265  15.058 -13.780  0.00  0.00    +0.000 A 
+ATOM      6  CAU AQD A1201     -13.891  14.071 -12.887  0.00  0.00    +0.000 A 
+ATOM      7  CAV AQD A1201     -14.376  12.763 -13.031  0.00  0.00    +0.000 A 
+ATOM      8  CAW AQD A1201     -15.615  13.449 -14.994  0.00  0.00    +0.000 A 
+ATOM      9  CAX AQD A1201     -15.118  14.748 -14.834  0.00  0.00    +0.000 A 
+ATOM     10 CLA  AQD A1201     -12.777  14.490 -11.593  0.00  0.00    +0.000 Cl
+BRANCH   7  12
+ATOM     11  CAA AQD A1201     -14.651  10.489 -12.085  0.00  0.00    +0.000 C 
+ATOM     12  NAP AQD A1201     -13.960  11.763 -12.096  0.00  0.00    +0.000 NA
+ENDBRANCH   7  12
+BRANCH   8  14
+ATOM     13  CAB AQD A1201     -16.765  11.793 -16.344  0.00  0.00    +0.000 C 
+ATOM     14  OAR AQD A1201     -16.479  13.184 -16.085  0.00  0.00    +0.000 OA
+ENDBRANCH   8  14
+ENDBRANCH   1   9
+BRANCH   2  19
+ATOM     15  CAC AQD A1201     -16.699  15.290 -19.320  0.00  0.00    +0.000 C 
+ATOM     16  CAM AQD A1201     -18.166  17.653 -16.797  0.00  0.00    +0.000 C 
+ATOM     17  CAN AQD A1201     -19.349  17.390 -17.881  0.00  0.00    +0.000 C 
+ATOM     18  CAY AQD A1201     -17.416  16.578 -18.817  0.00  0.00    +0.000 C 
+ATOM     19  CAZ AQD A1201     -16.997  16.959 -17.469  0.00  0.00    +0.000 C 
+ATOM     20  NBA AQD A1201     -18.795  16.355 -18.773  0.00  0.00    +0.000 NA
+BRANCH  20  21
+ATOM     21  CAO AQD A1201     -19.331  16.401 -20.098  0.00  0.00    +0.000 C 
+BRANCH  21  27
+ATOM     22  CAF AQD A1201     -23.565  17.421 -20.210  0.00  0.00    +0.000 A 
+ATOM     23  CAG AQD A1201     -22.616  18.335 -20.665  0.00  0.00    +0.000 A 
+ATOM     24  CAH AQD A1201     -23.166  16.184 -19.721  0.00  0.00    +0.000 A 
+ATOM     25  CAI AQD A1201     -21.259  18.001 -20.632  0.00  0.00    +0.000 A 
+ATOM     26  CAJ AQD A1201     -21.806  15.847 -19.682  0.00  0.00    +0.000 A 
+ATOM     27  CAT AQD A1201     -20.852  16.758 -20.138  0.00  0.00    +0.000 A 
+ENDBRANCH  21  27
+ENDBRANCH  20  21
+ENDBRANCH   2  19
+TORSDOF 6
