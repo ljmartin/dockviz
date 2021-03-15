@@ -1,3 +1,4 @@
 libgcc=5.2.0
 rdkit
+xorg-libxrender
 py3dmol
